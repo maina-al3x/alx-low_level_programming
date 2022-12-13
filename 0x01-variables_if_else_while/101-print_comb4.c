@@ -1,11 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
- * print only the smallest combination of three digits
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i;
@@ -22,14 +19,16 @@ int main(void)
 				{
 					if (j > n)
 					{
-						putchar (i);
-						putchar (n);
-						putchar (j);
+						putchar(i);
+						putchar(n);
+						putchar(j);
 						if (i == 55 && n == 56 && j == 57)
+						{
 							break;
+						}
+					putchar(',');
+					putchar(' ');
 					}
-					putchar (',');
-					putchar (' ');
 				}
 			}
 		}
@@ -37,4 +36,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
