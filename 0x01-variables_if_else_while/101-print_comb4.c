@@ -1,26 +1,32 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Return: 0
+ *
+ * Return: Always 0
  */
+
 int main(void)
 {
-	int c;
-	int d;
-	int e = 0;
+	int i;
+	int j;
+	int k;
 
-	while (e < 10)
+	for (i = 0; i <= 9; i++)
 	{
-		d = 0;
-		while (d < 10)
+		for (j = 0; j <= 9; j++)
 		{
-			c = 0;
-			while (c < 10)
+			for (k = 0; k <= 9; k++)
 			{
-				if (c != d && d != e && e < d && d < c)
+				if (k > j && j > i)
 				{
-					putchar('0' + e);
-					putchar('0' + d);
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i != 7 || j != 8 || k != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
