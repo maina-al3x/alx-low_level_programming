@@ -23,7 +23,7 @@ int main(void)
 		{
 			sum = sum + j;
 		}
-		next = j = k;
+		next = j + k;
 		j = k;
 		k = next;
 	}
