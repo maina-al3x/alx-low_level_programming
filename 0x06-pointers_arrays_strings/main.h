@@ -3,7 +3,8 @@
 
 /**
  * File: main.h
- * This is the header file containing the prototypes for all the functions for this project (0x06)
+ * Main: this is the header file containing the prototypes for
+ * all the functions for the project 0x06 'more pointers and arrays'
  */
 
 int _putchar(char c);
