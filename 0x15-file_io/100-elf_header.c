@@ -180,6 +180,7 @@ int main(int argc, char *argv[])
 {
 	int fd, _read, _close;
 	Elf64_Ehdr *file;
+
 	if (argc > 2 || argc < 2)
 		dprintf(STDERR_FILENO, "Usage: error in # of args\n"), exit(98);
 	file = malloc(sizeof(Elf64_Ehdr));
